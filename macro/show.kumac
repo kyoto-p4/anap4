@@ -1,0 +1,8 @@
+macro show id=1 opt='colz'
+  while 1 do
+    h/pl [id] [opt]
+    mess Hist ID = [id]
+    wait
+    id = [id] + 1
+  endwhile
+return
